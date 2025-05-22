@@ -1,0 +1,60 @@
+history 
+git --version
+git --tree
+sudo apt update
+sudo apt install git
+sudo apt install tree
+ssh-keygen
+cat .ssh/id_rsa.pub 
+git clone git@github.com:EdisonUnog/TP_AySO.git
+ls -l
+cd TP_AySO/
+ls -l
+cat /etc/os-release 
+grep -i home_url /etc/os-release 
+grep -i home_url /etc/os-release > datos_url.txt
+cat datos_url.txt 
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_u
+cat datos_usuario.txt 
+git add .
+git config --global user.name "EdisonUnog"
+git config --global user.email edisoncmac@gmail.com
+git commit -m "ADD: agregado el 1er ejercicio sobre datos_usuario.txt"
+git push
+cat /proc/cpuinfo 
+grep "model name" /proc/cpuinfo | head -n1
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+git add .
+git status
+git commit -m "feat: Añadiendo informacion de CPU"
+git push
+cat << FIN >> README.md 
+Alumno: <Edison Uñog>
+Division: <117>
+Turno: <Mañana>
+FIN
+
+git add README.md datos_usuario.txt 
+git commit -m "ADD: Añadiendo Readme y datos de ususario"
+git push
+cd /
+cd home/
+pwd
+sudo mkdir -p material{1..2}/uni{..2}
+ls -l
+echo "sudo mkdir -p material{1..2}/uni{..2}" >> vagrant/TP_AySO/script.sh | chmod +x vagrant/TP_AySO/script.sh 
+git add .
+git add . vagrant/
+git add . vagrant/TP_AySO
+cd vagrant/TP_AySO/
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+ls -l
+cd
+cd ..
+pwd
+history -a
